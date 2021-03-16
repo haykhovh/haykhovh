@@ -540,6 +540,7 @@
 
         <div class="row masonry-wrap">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <div class="demo">
                 <ul id="lightSlider">
                     <li data-thumb="https://sachinchoolur.github.io/lightslider/img/thumb/cS-1.jpg">
@@ -582,6 +583,35 @@
             </div>
 =======
 
+=======
+            <img class="mySlides" src="img1.jpg">
+            <img class="mySlides" src="img2.jpg">
+            <img class="mySlides" src="img3.jpg">
+            <img class="mySlides" src="img4.jpg">
+            <img class="mySlides" src="img5.jpg">
+            <button class="w3-button w3-display-left" onclick="plusDivs(-1)">&#10094;</button>
+            <button class="w3-button w3-display-right" onclick="plusDivs(+1)">&#10095;</button>
+
+            <script>
+                var slideIndex = 1;
+                showDivs(slideIndex);
+                
+                function plusDivs(n) {
+                  showDivs(slideIndex += n);
+                }
+                
+                function showDivs(n) {
+                  var i;
+                  var x = document.getElementsByClassName("mySlides");
+                  if (n > x.length) {slideIndex = 1}
+                  if (n < 1) {slideIndex = x.length}
+                  for (i = 0; i < x.length; i++) {
+                    x[i].style.display = "none";  
+                  }
+                  x[slideIndex-1].style.display = "block";  
+                }
+                </script>
+>>>>>>> parent of 2eef858 (sdfsdf)
 
 >>>>>>> parent of 8d2f2ff (Update index.html)
         </div> <!-- end masonry -->
