@@ -24,7 +24,29 @@
     <link rel="stylesheet" href="css/vendor.css">
     <link rel="stylesheet" href="css/main.css">
     <link rel="stylesheet" href="/css/w3.css">
-    <link type="text/css" rel="stylesheet" href="css/lightslider.css" />                  
+    <link type="text/css" rel="stylesheet" href="css/lightslider.css" />      
+    <style>
+    	ul{
+			list-style: none outside none;
+		    padding-left: 0;
+            margin: 0;
+		}
+        .demo .item{
+            margin-bottom: 60px;
+        }
+		.content-slider li{
+		    background-color: #ed3020;
+		    text-align: center;
+		    color: #FFF;
+		}
+		.content-slider h3 {
+		    margin: 0;
+		    padding: 70px 0;
+		}
+		.demo{
+			width: 800px;
+		}
+    </style>            
 
     
     <!-- script
@@ -33,6 +55,26 @@
     <script src="js/pace.min.js"></script>
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
     <script src="js/lightslider.js"></script>
+    <script>
+        $(document).ready(function() {
+           $("#content-slider").lightSlider({
+               loop:true,
+               keyPress:true
+           });
+           $('#image-gallery').lightSlider({
+               gallery:true,
+               item:1,
+               thumbItem:9,
+               slideMargin: 0,
+               speed:500,
+               auto:true,
+               loop:true,
+               onSliderLoad: function() {
+                   $('#image-gallery').removeClass('cS-hidden');
+               }  
+           });
+       });
+   </script>
     <!-- favicons
     ================================================== -->
     <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
