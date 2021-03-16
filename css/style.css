@@ -1,5 +1,4 @@
 <<<<<<< HEAD
-<<<<<<< HEAD
 .slider{
   width: 800px;
   height: 500px;
@@ -106,8 +105,6 @@
   background: #40D3DC;
 }
 =======
-=======
->>>>>>> parent of 94faf18 (slideshow fix trial)
 body{
   margin: 0;
   padding: 0;
@@ -223,9 +220,5 @@ body{
 #radio4:checked ~ .navigation-auto .auto-btn4{
   background: #40D3DC;
 }
-<<<<<<< HEAD
-      
->>>>>>> parent of 94faf18 (slideshow fix trial)
-=======
       
 >>>>>>> parent of 94faf18 (slideshow fix trial)
